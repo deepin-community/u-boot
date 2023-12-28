@@ -1,3 +1,10 @@
+u-boot (2023.07+dfsg-1deepin1) unstable; urgency=medium
+
+  * delete gcc-mips64el-linux-gnuabi64 and gcc-mipsel-linux-gnu from
+    Depends-Indep
+
+ -- bluesky <chenchongbiao@deepin.org>  Thu, 28 Dec 2023 15:20:43 +0800
+
 u-boot (2023.07+dfsg-1) unstable; urgency=medium
 
   * New upstream release.
