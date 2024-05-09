@@ -587,25 +587,32 @@ else ifeq (${DEB_HOST_ARCH},sh4)
 
 # u-boot
 
-  u-boot_platforms += r2dplus
+# u-boot_platforms += r2dplus
+  r2dplus_targets := u-boot.bin uboot.elf
+
+else ifeq (${DEB_HOST_ARCH},loong64)
+
+# u-boot
+
+#  u-boot_platforms += r2dplus
   r2dplus_targets := u-boot.bin uboot.elf
 
 endif
 
 # u-boot-qemu (Architecture: all)
 
-  u-boot-qemu_platforms += malta64el
-  malta64el_CROSS_COMPILE := mips64el-linux-gnuabi64-
-  malta64el_targets := u-boot.bin uboot.elf
+#  u-boot-qemu_platforms += malta64el
+#  malta64el_CROSS_COMPILE := mips64el-linux-gnuabi64-
+#  malta64el_targets := u-boot.bin uboot.elf
 
-  u-boot-qemu_platforms += maltael
-  maltael_CROSS_COMPILE := mipsel-linux-gnu-
-  maltael_targets := u-boot.bin uboot.elf
+#  u-boot-qemu_platforms += maltael
+#  maltael_CROSS_COMPILE := mipsel-linux-gnu-
+#  maltael_targets := u-boot.bin uboot.elf
 
-  u-boot-qemu_platforms += qemu-ppce500
-  qemu-ppce500_CROSS_COMPILE := powerpc-linux-gnu-
-  qemu-ppce500_targets := u-boot.bin uboot.elf
-
+  # u-boot-qemu_platforms += qemu-ppce500
+  # qemu-ppce500_CROSS_COMPILE := powerpc-linux-gnu-
+  # qemu-ppce500_targets := u-boot.bin uboot.elf
+ifeq (${DEB_HOST_ARCH},amd64,arm64)
   u-boot-qemu_platforms += qemu-riscv64
   qemu-riscv64_CROSS_COMPILE := riscv64-linux-gnu-
   qemu-riscv64_targets := u-boot.bin uboot.elf
@@ -629,3 +636,4 @@ endif
   u-boot-qemu_platforms += qemu_arm64
   qemu_arm64_CROSS_COMPILE := aarch64-linux-gnu-
   qemu_arm64_targets := u-boot.bin uboot.elf
+endif
