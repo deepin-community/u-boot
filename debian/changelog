@@ -1,3 +1,10 @@
+u-boot (2024.01+dfsg-5deepin1) unstable; urgency=medium
+
+  * delete gcc-mips64el-linux-gnuabi64 and gcc-mipsel-linux-gnu from
+    Depends-Indep.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Thu, 09 May 2024 11:18:12 +0800
+
 u-boot (2024.01+dfsg-5) unstable; urgency=medium
 
   * Upload to unstable.

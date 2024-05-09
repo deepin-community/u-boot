@@ -33,14 +33,12 @@ Build-Depends-Arch:
  uuid-dev:native [arm64],
 Build-Depends-Indep:
 # For u-boot-qemu targets
- gcc-i686-linux-gnu [!i386],
- gcc-arm-linux-gnueabihf [!armhf],
- gcc-aarch64-linux-gnu [!arm64],
- gcc-riscv64-linux-gnu [!riscv64],
- gcc-x86-64-linux-gnu [!amd64],
- gcc-powerpc-linux-gnu [!powerpc],
- gcc-mips64el-linux-gnuabi64 [!mips64el],
- gcc-mipsel-linux-gnu [!mipsel],
+ gcc-i686-linux-gnu [!i386 !loong64 !riscv64],
+ gcc-arm-linux-gnueabihf [!armhf !loong64 !riscv64],
+ gcc-aarch64-linux-gnu [!arm64 !loong64 !riscv64],
+ gcc-riscv64-linux-gnu [!riscv64 !loong64],
+ gcc-x86-64-linux-gnu [!amd64 !loong64 !riscv64],
+ gcc-powerpc-linux-gnu [!powerpc !loong64 !riscv64],
 Rules-Requires-Root: no
 Standards-Version: 4.6.2
 Homepage: https://www.denx.de/wiki/U-Boot/
