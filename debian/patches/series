@@ -22,3 +22,13 @@ riscv64/serial-move-sbi_dbcn_available-to-.data-section.patch
 riscv64/riscv-sifive-fu740-reduce-DDR-speed-from-1866MT-s-to-1600MT-s.patch
 
 am62x/0008-arm-dts-k3-am625-Don-t-try-to-build-the-final-firmwa.patch
+
+# CVE security fixes (2026-05-14)
+cve-fixes/CVE-2024-57258-x86-ptrdiff_t.patch
+cve-fixes/CVE-2024-57258-dlmalloc-request2size.patch
+cve-fixes/CVE-2024-57258-dlmalloc-sbrk.patch
+cve-fixes/CVE-2024-57254-squashfs-inode-size-overflow.patch
+cve-fixes/CVE-2024-57255-squashfs-resolve-symlink-overflow.patch
+cve-fixes/CVE-2024-57257-squashfs-stack-overflow.patch
+cve-fixes/CVE-2024-57259-squashfs-heap-corruption.patch
+cve-fixes/CVE-2024-57256-ext4-read-symlink-overflow.patch
