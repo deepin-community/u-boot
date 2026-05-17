@@ -26,3 +26,4 @@ am62x/0008-arm-dts-k3-am625-Don-t-try-to-build-the-final-firmwa.patch
 cve-fixes/CVE-2024-57254-squashfs-inode-size-overflow.patch
 cve-fixes/CVE-2024-57255-squashfs-resolve-symlink-overflow.patch
 cve-fixes/CVE-2024-57256-ext4-read-symlink-overflow.patch
+cve-fixes/CVE-2024-57257-squashfs-stack-overflow.patch
