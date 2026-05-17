@@ -30,3 +30,4 @@ cve-fixes/CVE-2024-57257-squashfs-stack-overflow.patch
 cve-fixes/CVE-2024-57258-x86-ptrdiff_t.patch
 cve-fixes/CVE-2024-57258-dlmalloc-request2size.patch
 cve-fixes/CVE-2024-57258-dlmalloc-sbrk.patch
+cve-fixes/CVE-2024-57259-squashfs-heap-corruption.patch
